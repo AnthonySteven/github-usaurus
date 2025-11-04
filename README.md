@@ -2,7 +2,9 @@
 
 ## Overview
 
-On our project we use a docs-as-code approach to managing our documentation. We use git, Markdown, and Docusaurus to create and maintain our docs. This repository is a sample documentation website built using these tools.
+On our project we use a docs-as-code approach to managing our documentation. We use git, Markdown, and Docusaurus to create and maintain our docs. 
+
+This repository is a sample documentation website built using these tools - and you can view the built website here: https://philstollery.github.io/github-usaurus.
 
 Please can you:
 
@@ -77,15 +79,15 @@ git push -u origin
   url: 'https://philstollery.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/github-usaurus',
+  baseUrl: '/github-usaurus/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'PhilStollery', // Usually your GitHub org/user name.
+  organizationName: 'philstollery', // Usually your GitHub org/user name.
   projectName: 'github-usaurus', // Usually your repo name.
 ```
 
-Change the `url`, `organizationName` and `projectName` values to match your GitHub username and repository name respectively.
+Change the `url`, `baseUrl`, `organizationName`, and `projectName` values to match your GitHub username and repository name respectively.
 
 1. Run the deployment command:
 
