@@ -120,9 +120,9 @@ You should see a series of **Create mode** messages.
 6. Add your GitHub repository as a remote. 
 
 ```
-git remote add origin https://github.com/<github-username>/my-docsite.git
+git remote add origin https://github.com/github-username/my-docsite.git
 ```
->**Note:** Replace <github-username> with your GitHub user name. 
+>**Note:** Replace **github-username** with your GitHub user name. 
 
 7. Check git configuration:
 
@@ -164,9 +164,9 @@ Leave your browser window open.
 3. Replace the existing variables with ones that match your naming convention:
 
 ```
-url: 'https://<github-username>.github.io',
+url: 'https://github-username.github.io',
 baseUrl: '/my-docsite/',
-organizationName: '<github-username>',
+organizationName: 'github-username',
 projectName: 'my-docsite',
 
 ```
@@ -199,7 +199,7 @@ Docusaurus expects to find a branch called `gh-pages`. You can create this branc
 2. Configure the GIT_USER environment variable:
 
 ```
-$env:GIT_USER="<github-username>"
+$env:GIT_USER="github-username"
 ```
 
 3. Check that you are in the project folder, for example, `C:\dev\my-docsite`.
@@ -213,11 +213,11 @@ This screenshot shows the expected output:
 
 ![Run yarn to deploy the docusaurus site to GitHub](./images/8-yarn-deploy.png) 
 
-5. Note the `Website is live at https://<github-username>.github.io/my-docsite/` message. 
+5. Note the `Website is live at https://github-username.github.io/my-docsite/` message. 
 
 ## View the published site on GitHub Pages
 
-1. Copy the `https://<github-username>.github.io/my-docsite/` link and paste it into a new browser tab.
+1. Copy the `https://github-username.github.io/my-docsite/` link and paste it into a new browser tab.
 
 2. You can now view the deployed Docusaurus site on GitHub.
 
