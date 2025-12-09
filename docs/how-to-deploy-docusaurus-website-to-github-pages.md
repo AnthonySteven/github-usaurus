@@ -4,7 +4,7 @@ title: How to deploy a Docusaurus website to GitHub Pages
 
 # Introduction
 
-This process enables you to integrate Docusaurus with GitHub for simple tasks such as content publication. After you complete this task, you will be able to:
+This document describes how to integrate Docusaurus with GitHub to publish simple websites with version control. By following these instructions, you will be able to:
 
 - Create an instance of a Docusaurus website on your computer.
 - Create a new GitHub repository (repo) for hosting the Docusaurus web site online.
