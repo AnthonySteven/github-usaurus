@@ -1,5 +1,5 @@
 ---
-title: How to Deploy a Docusaurus website to GitHub Pages
+title: How to deploy a Docusaurus website to GitHub Pages
 ---
 
 # Introduction
@@ -9,22 +9,23 @@ This process enables you to integrate Docusaurus with GitHub for simple tasks su
 - Create an instance of a Docusaurus website on your computer.
 - Create a new GitHub repository (repo) for hosting the Docusaurus web site online.
 - Connect a local Docusaurus project to the new GitHub repo.
-- Configure Docusaurus to deploy to GitHub pages.
+- Configure Docusaurus to deploy to GitHub Pages.
 - Deploy your Docusaurus website to GitHub.
 - View your published site on GitHub.
 
 ## Background
 
-Docusaurus is an open-source static website generator that enables you to build websites quickly and easily. Integrating Docusaurus with GitHub creates a simple-to-maintain content repository, particularly useful for building and maintaining online documentation. 
+Docusaurus is an open-source static website generator that enables you to build websites quickly and easily. Integrating Docusaurus with GitHub creates a simple-to-maintain content repository, particularly useful for building and publishing online documentation. 
 
 ## Before you start 
 
 Install the following software:
 
-- Git for your operating system 
-- Node.js v14 or later (Long Term Support version)
-- Yarn package manager
-- Docusaurus
+- Git (for your operating system), at https://git-scm.com/install/  
+- Node.js v20.0 or later, at https://nodejs.org/en/download/ (Long Term Support version)
+- npm, installed with Node.js
+- Yarn package manager (installed using npm)
+- Docusaurus (installed using npm)
 - Your preferred code editor, such as Notepad, Visual Studio Code (VSC) or similar
 
 You should also have configured Git to work with a Personal Access Token. For more information on generating and configuring Personal Access tokens, see https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic. 
@@ -51,7 +52,7 @@ These instructions assume you have knowledge of:
 npx create-docusaurus@latest my-docsite classic
 ```
 
-4. At the **Which language to you want to use?** prompt, select `JavaScript` and press **Enter**. 
+4. At the **Which language do you want to use?** prompt, select `JavaScript` and press **Enter**. 
 
 5. The output should be similar to this screenshot: 
 
@@ -119,9 +120,9 @@ You should see a series of **Create mode** messages.
 6. Add your GitHub repository as a remote. 
 
 ```
-git remote add origin https://github.com/github-username/my-docsite.git
+git remote add origin https://github.com/<github-username>/my-docsite.git
 ```
->**Note:** Replace github-username with your GitHub user name. 
+>**Note:** Replace <github-username> with your GitHub user name. 
 
 7. Check git configuration:
 
@@ -163,9 +164,9 @@ Leave your browser window open.
 3. Replace the existing variables with ones that match your naming convention:
 
 ```
-url: 'https://github-username.github.io',
+url: 'https://<github-username>.github.io',
 baseUrl: '/my-docsite/',
-organizationName: 'github-username',
+organizationName: '<github-username>',
 projectName: 'my-docsite',
 
 ```
@@ -198,12 +199,12 @@ Docusaurus expects to find a branch called `gh-pages`. You can create this branc
 2. Configure the GIT_USER environment variable:
 
 ```
-$env:GIT_USER="github-username"
+$env:GIT_USER="<github-username>"
 ```
 
-2. Check that you are in the project folder, for example, `C:\dev\my-docsite`.
+3. Check that you are in the project folder, for example, `C:\dev\my-docsite`.
 
-3. Deploy the site:
+4. Deploy the site:
 
 ```
 yarn deploy
@@ -212,11 +213,11 @@ This screenshot shows the expected output:
 
 ![Run yarn to deploy the docusaurus site to GitHub](./images/8-yarn-deploy.png) 
 
-4. Note the `Website is live at https://github-username.github.io/my-docsite/` message. 
+5. Note the `Website is live at https://<github-username>.github.io/my-docsite/` message. 
 
-## View the published site on GitHub Pages URL
+## View the published site on GitHub Pages
 
-1. Copy the `https://github-username.github.io/my-docsite/` link and paste it into a new browser tab.
+1. Copy the `https://<github-username>.github.io/my-docsite/` link and paste it into a new browser tab.
 
 2. You can now view the deployed Docusaurus site on GitHub.
 
@@ -229,7 +230,7 @@ In this tutorial, you:
 - Set up a new Docusaurus site.
 - Created a new GitHub repo.
 - Connected the Docusaurus project to the GitHub repo.
-- Configured Docusaurus to deploy to GitHub pages.
+- Configured Docusaurus to deploy to GitHub Pages.
 - Deployed the Docusaurus website to GitHub.
 - Checked that the Docusaurus site displays correctly. 
 
@@ -237,4 +238,5 @@ In this tutorial, you:
 
 - Troubleshoot Docusaurus error messages
 - Configure trailing slashes in `docusaurus.config.js`
+- Generate a Personal Access Token
 - Update Docusaurus content and rebuild the website
