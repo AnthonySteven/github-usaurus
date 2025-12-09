@@ -1,5 +1,5 @@
 ---
-title: How-To: Deploy a Docusaurus website to Github Pages
+title: How-To Deploy a Docusaurus website to Github Pages
 ---
 
 # Introduction
@@ -65,7 +65,7 @@ You should also have configured Git to work with a Personal Access Token. For mo
 
 ## Check GitHub Pages enabled in repository settings
 
-## View the published site on their GitHub Pages URL
+## View the published site on GitHub Pages URL
 
 
 
